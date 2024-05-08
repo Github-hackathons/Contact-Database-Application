@@ -3,10 +3,10 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "appName": {
-      "value": "YourAppName"
+      "value": "AmalTestApp"
     },
     "appServicePlanName": {
-      "value": "YourAppServicePlanName"
+      "value": "AmalTestAppServicePlanName"
     },
     "appServicePlanSku": {
       "value": "F1"
