@@ -22,7 +22,7 @@ jobs:
     - name: Build
       run: msbuild /p:Configuration=Release "CRUD application 2.sln"
     - name: Publish
-      run: dotnet publish --configuration Release --no-build --output ./output
+      run: dotnet publish "CRUD application 2.sln" --configuration Release --output ./publish
     - name: 'Deploy to Azure WebApp'
       uses: azure/webapps-deploy@v2
       with:
