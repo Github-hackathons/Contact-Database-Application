@@ -18,7 +18,7 @@ jobs:
         sudo apt-get install -y nuget
     - name: Restore packages
       run: |
-        nuget restore CRUD application 2.sln
+        nuget restore "CRUD application 2.sln"
     - name: Build
       run: dotnet build --configuration Release --no-restore
     - name: Test
