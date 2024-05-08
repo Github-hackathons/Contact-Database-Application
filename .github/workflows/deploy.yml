@@ -13,8 +13,12 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: '3.1.x'
-    - name: Restore dependencies
-      run: dotnet restore
+    - name: Install NuGet
+      run: |
+        sudo apt-get install -y nuget
+    - name: Restore packages
+      run: |
+        nuget restore Contact-Database-Application.sln
     - name: Build
       run: dotnet build --configuration Release --no-restore
     - name: Test
